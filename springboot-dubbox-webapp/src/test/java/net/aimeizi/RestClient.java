@@ -46,6 +46,7 @@ public class RestClient {
 
     private static void registerStudent(String url, MediaType mediaType) {
         System.out.println("Registering student via " + url);
+        //test
         Student student = new Student(1L, "dubbo");
         Client client = ClientBuilder.newClient();
         WebTarget target = client.target(url);
